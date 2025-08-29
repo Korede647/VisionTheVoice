@@ -62,13 +62,14 @@ nav{display:flex;align-items:center;justify-content:space-between;}
   padding:64px 0 48px;
   overflow:hidden;
   position: relative;
-  background-image: 
+  background: 
     linear-gradient(
       to right, 
       rgb(0, 0, 0) 0%,   /* very dark on the left */
       rgba(17, 1, 28, 0.811) 40%, /* medium in the middle */
       rgba(0, 0, 0, 0.0) 100% /* fully exposed on the right */
-    );
+    ),
+    url("../../assets/img/heor-background2.jpg");
   background-size: cover;
   background-position: top;
   color: #fff; /* readable text */

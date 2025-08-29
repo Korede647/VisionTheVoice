@@ -3,14 +3,10 @@ import { NavLink } from 'react-router-dom';
 import "./css/style.css"
 import "./css/responsive.css"
 import "./css/transitions.css"
-import HeroPic from "../assets/img/heor-background2.jpg"
 
 const Hero: React.FC = () => {
   return (
-    <header className="hero reveal" style={{ 
-        backgroundImage: `url(${HeroPic})`
-    }}
-        >
+    <header className="hero reveal">
       <div className="container hero-inner">
         <div className="hero-space">
           <span className="badge">

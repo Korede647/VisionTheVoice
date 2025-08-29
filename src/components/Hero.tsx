@@ -6,6 +6,7 @@ import "./css/transitions.css"
 
 const Hero: React.FC = () => {
   return (
+    <>
     <header className="hero reveal">
       <div className="container hero-inner">
         <div className="hero-space">
@@ -25,6 +26,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 

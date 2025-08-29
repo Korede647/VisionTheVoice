@@ -32,21 +32,11 @@ const Navbar: React.FC = () => {
             className={`nav-links ${isMenuOpen ? 'block' : 'hidden'}`}
             id="navLinks"
           >
-            <NavLink to="/features" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Features
-            </NavLink>
-            <NavLink to="/resources" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Resources
-            </NavLink>
-            <NavLink to="/pricing" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Pricing
-            </NavLink>
-            <NavLink to="/testimonials" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Stories
-            </NavLink>
-            <NavLink to="/help" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Help
-            </NavLink>
+            <NavLink to="/features">Features</NavLink>
+            <NavLink to="/resources">Resources</NavLink>
+            <NavLink to="/pricing">Pricing</NavLink>
+            <NavLink to="/testimonials">Stories</NavLink>
+            <NavLink to="/help">Help</NavLink>
             <div className="nav-cta" id="phone">
               <NavLink to="/login" className="btn ghost">
                 Sign in

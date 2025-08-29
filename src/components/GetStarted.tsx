@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import "./css/style.css"
 import "./css/responsive.css"
 import "./css/transitions.css"
+import Mic from "../assets/img/ri_mic-ai-fill.png"
+import Vid from "../assets/img/ph_video-fill.png"
 
 const GetStarted: React.FC = () => {
   return (
@@ -23,7 +25,7 @@ const GetStarted: React.FC = () => {
               <NavLink to="/features" className="btn ghost">
                 Learn more
               </NavLink>
-              <img src="/img/ri_mic-ai-fill.png" alt="" className="GS-icon" />
+              <img src={Mic} alt="" className="GS-icon" />
             </div>
           </div>
           <div className="tile">
@@ -35,7 +37,7 @@ const GetStarted: React.FC = () => {
               <NavLink to="/features" className="btn ghost">
                 Learn more
               </NavLink>
-              <img src="/img/ph_video-fill.png" alt="" className="GS-icon" />
+              <img src={Vid} alt="" className="GS-icon" />
             </div>
           </div>
         </div>

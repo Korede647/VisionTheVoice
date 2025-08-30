@@ -1,8 +1,11 @@
-import "./css/signup.css"
+
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import "./css/signup.css"
+import "./css/style.css"
+import "./css/transitions.css"
 import SignLogo from "../assets/img/logo-navcopy.png"
-import Google from "../assets/img/Platform=Google, Shape=Original, Colored=True.png"\
+import Google from "../assets/img/Platform=Google, Shape=Original, Colored=True.png"
 import Facebook from "../assets/img/Platform=Facebook, Shape=Original, Colored=True.png"
 
 interface User {
@@ -111,6 +114,7 @@ const SignUp: React.FC = () => {
   };
 
   return (
+    <section className='div'>
     <div className="login-box reveal" ref={revealRef}>
       <img src={SignLogo} alt="Logo" className="login-logo" />
       <h2>Sign Up for VisionTheVoice</h2>
@@ -185,6 +189,7 @@ const SignUp: React.FC = () => {
         Already have an account? <NavLink to="/login">Log in</NavLink>
       </p>
     </div>
+    </section>
   );
 };
 

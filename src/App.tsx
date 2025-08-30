@@ -6,6 +6,7 @@ import Features from './components/Features'
 import GetStarted from './components/GetStarted'
 import Footer from './components/Footer'
 import SignUp from './components/Signup'
+import Login from './components/Login'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
           }
         />
         <Route path="/signup" element={<SignUp/>} />
-        <Route path="/resources" element={<div>Resources Page</div>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/pricing" element={<div>Pricing Page</div>} />
         <Route path="/testimonials" element={<div>Stories Page</div>} />
         <Route path="/help" element={<div>Help Page</div>} />

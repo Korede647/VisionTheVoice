@@ -1,7 +1,7 @@
 /* Full-page background */
 .div {
   margin: 0;
-  width: 100%;
+  width: 100vw;
   font-family: Arial, sans-serif;
   /* background: url("/img/podcast\ people.jpg") no-repeat center center/cover; */
     background: linear-gradient(rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.881)), 
@@ -14,7 +14,9 @@
   justify-content: center;
   min-height: 100vh;
   color: white;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 /* Dark overlay */
@@ -39,12 +41,17 @@
   width: 100%;
   max-width: 500px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 .login-box img {
   width: 80px;
 }
+
 
 .login-box h2 {
   margin: 0 0 1.5rem;

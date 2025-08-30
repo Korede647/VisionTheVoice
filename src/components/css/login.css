@@ -4,7 +4,7 @@
       font-family: Arial, sans-serif;
       /* background: url("/img/podcast\ people.jpg") no-repeat center center/cover; */
           background: linear-gradient(rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.881)), 
-              url('/img/podcast\ people.jpg') no-repeat center center/cover;
+              url('../../assets/img/podcast people.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;

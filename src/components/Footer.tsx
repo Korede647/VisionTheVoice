@@ -33,6 +33,19 @@ const Footer: React.FC = () => {
               Subscribe
             </button>
           </form>
+
+            <div
+        className="container"
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '22px',
+          color: '#a89ec1',
+        }}
+      >
+        <small>© 2025 Creator Flow</small>
+      </div>
         </div>
 
         <div>
@@ -103,18 +116,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <div
-        className="container"
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop: '22px',
-          color: '#a89ec1',
-        }}
-      >
-        <small>© 2025 Creator Flow</small>
-      </div>
+    
     </footer>
   );
 };

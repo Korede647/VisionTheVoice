@@ -12,6 +12,19 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+   const handleScroll = (id: string) => {
+    // Close mobile menu if open
+    setIsMenuOpen(false);
+
+    // Only scroll if on the home page
+    if (location.pathname === '/') {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div className="nav-wrap">
       <div className="container">
@@ -32,11 +45,61 @@ const Navbar: React.FC = () => {
             className={`nav-links ${isMenuOpen ? 'block' : 'hidden'}`}
             id="navLinks"
           >
-            <NavLink to="/features">Features</NavLink>
-            <NavLink to="/resources">Resources</NavLink>
-            <NavLink to="/pricing">Pricing</NavLink>
-            <NavLink to="/testimonials">Stories</NavLink>
-            <NavLink to="/help">Help</NavLink>
+             <NavLink
+              to="/features"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  handleScroll('features');
+                }
+              }}
+            >
+            Features
+            </NavLink>
+              <NavLink
+              to="/resources"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  handleScroll('resources');
+                }
+              }}
+            >
+              Resources
+            </NavLink>
+            <NavLink
+              to="/pricing"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  handleScroll('pricing');
+                }
+              }}
+            >
+              Pricing
+            </NavLink>
+            <NavLink
+              to="/testimonials"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  handleScroll('testimonials');
+                }
+              }}
+            >
+              Stories
+            </NavLink>
+            <NavLink
+              to="/help"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  handleScroll('help');
+                }
+              }}
+            >
+              Help
+            </NavLink>
             <div className="nav-cta" id="phone">
               <NavLink to="/login" className="btn ghost">
                 Sign in

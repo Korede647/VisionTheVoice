@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import GetStarted from './components/GetStarted'
 import Footer from './components/Footer'
+import SignUp from './components/Signup'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
             </>
           }
         />
-        <Route path="#features" element={<div>Features Page</div>} />
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="/resources" element={<div>Resources Page</div>} />
         <Route path="/pricing" element={<div>Pricing Page</div>} />
         <Route path="/testimonials" element={<div>Stories Page</div>} />
